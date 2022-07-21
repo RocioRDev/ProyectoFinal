@@ -106,10 +106,8 @@ public class ProductoRestController {
         try {
             productoUpdate.setNombre(producto.getNombre());
             productoUpdate.setCodigo_producto(producto.getCodigo_producto());
-            productoUpdate.setTipo(producto.getTipo());
-            productoUpdate.setPrecio(producto.getPrecio());
-            productoUpdate.setFecha_registro(producto.getFecha_registro());
-            productoUpdate.setCantidad(producto.getCantidad());
+            //productoUpdate.setPrecio(producto.getPrecio());
+            productoUpdate.setStock(producto.getStock());
             if (producto.getImagen() != null) {
                 String nombreFotoAnterior = producto.getImagen();
                 //verificamos que el cliente tenga registrado una imagen
